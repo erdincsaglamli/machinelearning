@@ -1,0 +1,147 @@
+
+
+import pandas as pd
+from sklearn import preprocessing
+from sklearn import utils
+import numpy as np
+
+
+
+features = pd.read_csv('features.csv')
+train = pd.read_csv('train.csv')
+test = pd.read_csv('test.csv')
+stores = pd.read_csv('stores.csv')
+features.head()
+
+
+print train.shape
+train.head()
+
+
+test.IsHoliday = test.IsHoliday.astype(int)
+test = test.drop('SalesForecast' , axis = 1)
+print test.shape
+test.head()
+
+
+stores.head()
+
+df = pd.merge(train ,features, on=('Store', 'Date' , 'IsHoliday'))
+test = pd.merge(test ,features, on=('Store', 'Date' , 'IsHoliday'))
+df.IsHoliday = df.IsHoliday.astype(int)
+df.head()
+
+
+
+import datetime as dt
+df['Date'] = pd.to_datetime(df['Date'])
+df['Date']= df['Date'].map(dt.datetime.toordinal)
+test['Date'] = pd.to_datetime(test['Date'])
+test['Date']= test['Date'].map(dt.datetime.toordinal)
+df.head()
+
+test.head()
+
+
+
+y = np.asarray(df['Sales'], dtype=float)
+df = df.drop('Sales' , axis = 1)
+df.head()
+
+test.IsHoliday = test.IsHoliday.astype(int)
+test.head()
+
+
+df.shape
+
+
+from sklearn.linear_model import LogisticRegression , SGDRegressor
+from sklearn.model_selection import cross_val_score
+from sklearn import svm
+
+
+df.head()
+
+
+
+train_f = pd.merge(df ,stores, on=('Store'))
+test_f  = pd.merge(test ,stores, on=('Store'))
+
+
+
+
+
+from sklearn.preprocessing import MinMaxScaler , StandardScaler
+scaler = StandardScaler()#MinMaxScaler()
+train_f.Type = [sum(ord(i) for i in j) for j in list(train_f['Type'])]
+col_tr =  list(train_f)
+train_f[['Temperature' , 'Fuel_Price' , 'CPI', 'Unemployment', 'Size']] = scaler.fit_transform(train_f[['Temperature' , 'Fuel_Price' , 'CPI', 'Unemployment' , 'Size']])
+train_f['Type'] = [i % 65 for i in train_f['Type']]
+train_f = train_f.drop('Date' , axis = 1)
+
+
+
+
+train_f.head()
+
+
+
+test_f.Type = [sum(ord(i) for i in j) for j in list(test_f['Type'])]
+print test_f.shape
+col_tr =  list(test_f)
+test_f[['Temperature' , 'Fuel_Price' , 'CPI', 'Unemployment' , 'Size']] = scaler.fit_transform(test_f[['Temperature' , 'Fuel_Price' , 'CPI', 'Unemployment' , 'Size']])
+test_f = pd.DataFrame(test_f , columns=col_tr)
+test_f = test_f.drop('Date' , axis = 1)
+test_f['Type'] = [i % 65 for i in test_f['Type']]
+test_f.head()
+
+
+
+model = SGDRegressor()
+model.fit(X=train_f , y=y)
+Pred = model.predict(X=test_f)
+
+
+submission = pd.read_csv('test.csv')
+print submission.shape
+
+
+Pred.shape
+
+
+submission.SalesForecast =  ['%.2f' % elem for elem in list(Pred)]
+
+
+submission.head()
+
+
+submission.to_csv('submission.csv')
+
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+
+print y
+l = [0 if i > 0 else i for i in y]
+
+
+##Eğitim veri setindeki kayıp
+fig, ax = plt.subplots()
+ax.scatter(train_f['Store'],l)
+
+
+##Eğitim veri setindeki satışlar
+fig, ax = plt.subplots()
+ax.scatter(train_f['Store'],y)
+
+
+##Test veri setindeki kayıplar
+fig, ax = plt.subplots()
+l = [0 if i > 0 else i for i in Pred]
+ax.scatter(test_f['Store'],l)
+
+
+##Test veri setindeki satışların tahmini
+fig, ax = plt.subplots()
+ax.scatter(test_f['Store'],Pred)
