@@ -1,17 +1,29 @@
-## Supervised Machine Learning: Regression and Classification
+## 1 - `Supervised Machine Learning: Regression and Classification   `  
 
- > Week 1 - Learning Objectives
+</br>
+
+  > ### Week 1 - `Introduction to Machine Learning  `  
+
+- [x] Define machine learning
+- [x] Define supervised learning
+- [x] Define unsupervised learning
+- [x] Write and run Python code in Jupyter Notebooks
+- [x] Define a regression model
+- [x] Implement and visualize a cost function
+- [x] Implement gradient descent
+- [x] Optimize a regression model using gradient descent
+</br>
+
+ > ### Week 2 - `Regression with multiple input variables `
+
+- [x] Use vectorization to implement multiple linear regression
+- [x] Use feature scaling, feature engineering, and polynomial regression to improve model training
+- [x] Implement linear regression in code
 
 
-* Define machine learning
-* Define supervised learning
-* Define unsupervised learning
-* Write and run Python code in Jupyter Notebooks
-* Define a regression model
-* Implement and visualize a cost function
-* Implement gradient descent
-* Optimize a regression model using gradient descent
 
+
+.
 
 
 
