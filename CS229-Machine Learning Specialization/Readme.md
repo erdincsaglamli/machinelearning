@@ -2,7 +2,7 @@
 
 </br>
 
-  > ### Week 1 - `Introduction to Machine Learning  `  
+  > ### Week 1 - `Introduction to Machine Learning  ` :tada:  
 
 - [x] Define machine learning
 - [x] Define supervised learning
@@ -14,7 +14,7 @@
 - [x] Optimize a regression model using gradient descent
 </br>
 
- > ### Week 2 - `Regression with multiple input variables `
+ > ### Week 2 - `Regression with multiple input variables ` :tada:
 
 - [x] Use vectorization to implement multiple linear regression
 - [x] Use feature scaling, feature engineering, and polynomial regression to improve model training
@@ -33,14 +33,8 @@ Content Cell  | Content Cell
 Content Cell  | Content Cell 
 
 
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
 - [ ] \(Optional) Open a followup issue
 
-
-
-` aaa -   d`
 
 
 ```mermaid
