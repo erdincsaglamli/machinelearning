@@ -21,6 +21,13 @@
 - [x] Implement linear regression in code
 
 
+</br>
+
+ > ### Week 3 - Classification` :tada:
+
+- [x] Use logistic regression for binary classification
+- [x] Implement logistic regression for binary classification
+- [x] Address overfitting using regularization, to improve model performance
 
 
 .
