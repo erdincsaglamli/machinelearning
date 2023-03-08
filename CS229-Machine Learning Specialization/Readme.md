@@ -23,7 +23,7 @@
 
 </br>
 
- > ### Week 3 - Classification` :tada:
+ > ### Week 3 - ` Classification` :tada:
 
 - [x] Use logistic regression for binary classification
 - [x] Implement logistic regression for binary classification
