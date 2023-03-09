@@ -1,4 +1,4 @@
-## 1 - `Supervised Machine Learning: Regression and Classification   `  
+## 1./3 - `Supervised Machine Learning: Regression and Classification   `  
 
 </br>
 
@@ -31,6 +31,32 @@
 
 
 .
+-------------------------------------------------------------------------------------------
+
+</br>
+
+## 2./3 - `Advanced Learning Algorithms   `  
+
+</br>
+
+
+ > ### Week 2 - `Neural Networks ` :tada:
+
+- [x] Get familiar with the diagram and components of a neural network
+- [x] Understand the concept of a "layer" in a neural network
+- [x] Understand how neural networks learn new features.
+- [x] Understand how activations are calculated at each layer.
+- [x] Learn how a neural network can perform classification on an image.
+- [x] Use a framework, TensorFlow, to build a neural network for classification of an image.
+- [x] Learn how data goes into and out of a neural network layer in TensorFlow
+- [x] Build a neural network in regular Python code (from scratch) to make predictions.
+- [x] (Optional): Learn how neural networks use parallel processing (vectorization) to make computations faster.
+
+
+</br>
+
+
+
 
 
 
