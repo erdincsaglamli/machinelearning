@@ -56,7 +56,7 @@
 </br>
 
 
- > ### Week 2 - `Neural Network Trainnig ` :tada:
+ > ### Week 2 - `Neural Network Trainig ` :tada:
 
 - [x] Train a neural network on data using TensorFlow
 - [x] Understand the difference between various activation functions (sigmoid, ReLU, and linear)
