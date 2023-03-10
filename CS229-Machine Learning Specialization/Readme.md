@@ -71,7 +71,23 @@
 
 </br>
 
+ > ### Week 3 - `Advice for applying machine learning` :tada:
 
+- [x] Evaluate and then modify your learning algorithm or data to improve your model's performance
+- [x] Evaluate your learning algorithm using cross validation and test datasets.
+- [x] Diagnose bias and variance in your learning algorithm
+- [x] Use regularization to adjust bias and variance in your learning algorithm
+- [x] Identify a baseline level of performance for your learning algorithm
+- [x] Understand how bias and variance apply to neural networks
+- [x] Learn about the iterative loop of Machine Learning Development that's used to update and improve a machine learning model
+- [x] Learn to use error analysis to identify the types of errors that a learning algorithm is making
+- [x] Learn how to add more training data to improve your model, including data augmentation and data synthesis
+- [x] Use transfer learning to improve your model's performance.
+- [x] Learn to include fairness and ethics in your machine learning model development
+- [x] Measure precision and recall to work with skewed (imbalanced) datasets
+
+
+</br>
 
 
 
