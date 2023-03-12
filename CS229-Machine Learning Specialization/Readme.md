@@ -102,6 +102,27 @@
 </br>
 
 
+## 3./3 - `Unsupervised Learning, Recommenders, Reinforcement Learning  `  
+
+</br>
+
+  > ### Week 1 - `Unsupervised Learning  ` :tada:  
+
+- [x] Implement the k-means clustering algorithm
+- [x] Implement the k-means optimization objective
+- [x] Initialize the k-means algorithm
+- [x] Choose the number of clusters for the k-means algorithm
+- [x] Implement an anomaly detection system
+- [x] Decide when to use supervised learning vs. anomaly detection
+- [x] Implement the centroid update function in k-means
+- [x] Implement the function that finds the closest centroids to each point in k-means
+
+
+
+
+</br>
+
+
 First Header  | Second Header
 ------------- | -------------
 Content Cell  | Content Cell
