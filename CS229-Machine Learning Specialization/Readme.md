@@ -90,6 +90,16 @@
 </br>
 
 
+ > ### Week 4 - `Decision trees` :tada:
+
+- [x] See what a decision tree looks like and how it can be used to make predictions
+- [x] Learn how a decision tree learns from training data
+- [x] Learn the "impurity" metric "entropy" and how it's used when building a decision tree
+- [x] Learn how to use multiple trees, "tree ensembles" such as random forests and boosted trees
+- [x] Learn when to use decision trees or neural networks
+
+
+</br>
 
 
 First Header  | Second Header
