@@ -117,8 +117,23 @@
 - [x] Implement the centroid update function in k-means
 - [x] Implement the function that finds the closest centroids to each point in k-means
 
+</br>
 
+  > ### Week 2 - `Recommender Systems  ` :tada:  
 
+- [x] Implement collaborative filtering recommender systems in TensorFlow
+- [x] Implement deep learning content based filtering using a neural network in TensorFlow
+- [x] Understand ethical considerations in building recommender systems
+
+</br>
+
+  > ### Week 3 - `Reinforcement Learning  ` :tada:  
+
+- [x] Understand key terms such as return, state, action, and policy as it applies to reinforcement learning
+- [x] Understand the Bellman equations
+- [x] Understand the state-action value function
+- [x] Understand continuous state spaces
+- [x] Build a deep Q-learning network
 
 </br>
 
